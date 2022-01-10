@@ -7,7 +7,8 @@ os.environ['OMP_NUM_THREADS'] = '1'
 if __name__ == '__main__':
     mp.set_start_method('spawn')
     global_ep = mp.Value('i', 0)
-    env_id = 'PongNoFrameskip-v4'
+    #env_id = 'PongNoFrameskip-v4'
+    env_id = 'MiniWorld-Hallway-v0'
     n_threads = 4
     n_actions = 6
     input_shape = [4, 42, 42]
